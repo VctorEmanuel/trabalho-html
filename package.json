@@ -1,0 +1,22 @@
+{
+  "name": "rangers",
+  "version": "1.0.0",
+  "description": "Wiki sobre o livro rangers - ordem dos arqueiros",
+  "main": "index.js",
+  "scripts": {
+    "test": "teste"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VctorEmanuel/trabalho-html.git"
+  },
+  "author": "Victor Emanuel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VctorEmanuel/trabalho-html/issues"
+  },
+  "homepage": "https://github.com/VctorEmanuel/trabalho-html#readme",
+  "dependencies": {
+    "npm": "^6.11.3"
+  }
+}

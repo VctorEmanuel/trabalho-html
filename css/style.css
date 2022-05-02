@@ -5,38 +5,56 @@
 }
 
 html {
-    min-width: 800px;
+    min-width: 1300px;
 }
 
 a {
     text-decoration: none;
+    color: #fff;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 table {
     border-collapse: collapse;
 }
 
-body {
-    background-color: #1b1b1b;
-}
-
 #container {
+    background-color: #1b1b1b;
+    min-width: 70%;
     width: 100%;
     height: 100%;
 }
 
-#topo {
+#header {
     width: 100%;
     height: 80px;
     background-color: #0a0a0a;
     color: #FFF;
     font-size: 18px;
     text-align: center;
+    position: fixed;
 }
 
-#container-main {
-    margin-left: 170.75px;
-    margin-top: 80px;
+#main {
+    width: 100%;
+    min-height: 100%;
+    margin-top: 120px;
+    margin-left: 150px;
+    width: 764px;
+    display: inline-block;
+    position: relative;
+    color: 1px solid salmon;
+}
+
+#footer {
+    width: 100%;
+    padding: 10px 0;
+    background-color: #0a0a0a;
+    height: 50px;
+    color: #FFF;
 }
 
 .logo-uniube {
@@ -49,7 +67,8 @@ body {
 .titulo {
     float: left;
     margin: 30px;
-    border-bottom: 1px solid #333333;
+    border-bottom: 1px solid #FFF;
+    font-size: 28px;
 }
 
 .container-nav {
@@ -65,15 +84,25 @@ body {
 .nav td a {
     display: block;
     height: 80px;
-    color: #FFF;
+    color: rgb(150, 150, 150);
     text-decoration: none;
     line-height: 78px;
     width: 110px;
 }
 
 .nav td a:hover {
-    background-color: #0e0e0e;
-    color: rgb(150, 150, 150);
+    background-color: #000000;
+    color: #FFF;
+}
+
+.nav td a.atual {
+    border: 1px solid #1b1b1b;
+    border-bottom: none;
+}
+
+.nav td a.ativo {
+    background-color: #1b1b1b;
+    color: #FFF;
 }
 
 .container-user {
@@ -95,28 +124,26 @@ body {
     margin-right: 10px;
 }
 
-#footer {
-    width: 100%;
-    background-color: #0a0a0a;
-    height: 50px;
-    color: #FFF;
-    align-items: baseline;
-    position: absolute;
-    bottom: 0;
-}
-
 .copyright {
     margin-top: 16px;
     margin-left: 140px;
 }
 
 .card-textos {
-    width: 900px;
+    width: 700px;
+    margin-bottom: 30px;
     background-color: #4c4c4c42;
     color: rgb(255, 255, 255);
-    opacity: 1;
     padding: 30px;
+    border: 1px solid #0a0a0a;
+    float: left;
 }
 
-/* SOBRE */
+.card-textos h2 {
+    padding-bottom: 20px;
+    text-decoration: underline;
+}
 
+.card-textos p {
+    padding-bottom: 10px;
+}
